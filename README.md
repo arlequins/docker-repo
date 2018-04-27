@@ -3,4 +3,5 @@
 ## centos7-base
 ## gitlab-base
 ## nginx-base
+## script
 
