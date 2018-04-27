@@ -1,10 +1,13 @@
-FROM scratch
-ADD centos-7.4.1708-docker.tar.xz /
+FROM docker.io/centos:7.4.1708
 
-LABEL name="CentOS Base Image" \
-    vendor="CentOS" \
-    license="GPLv2" \
-    build-date="20170911"
+USER root
+
+RUN yum clean all \
+ && yum repolist \
+ && yum -y install openssh-server openssh-clients \
+ && yum -y install sudo
+
+ENV LANG=en_US.utf8 TZ=Asia/Seoul
 
 CMD ["/bin/bash"]
 
