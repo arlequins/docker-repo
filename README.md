@@ -4,3 +4,7 @@
 ## gitlab-base
 ## nginx-base
 
+## reference
+### Docker Swarm
+- https://subicura.com/2017/02/25/container-orchestration-with-docker-swarm.html (Korean)
+
