@@ -5,3 +5,7 @@
 ## nginx-base
 ## script
 
+## reference
+### Docker Swarm
+- https://subicura.com/2017/02/25/container-orchestration-with-docker-swarm.html (Korean)
+
