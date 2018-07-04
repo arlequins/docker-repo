@@ -1,7 +1,7 @@
 docker network create setine-network
 
 docker run \
---privileged -d -p 23:22 -p 90:80 -p 3306:3306 -p 27017:27017 \
+--privileged -d -p 23:22 -p 90:80 -p 3307:3306 -p 27017:27017 \
 --net setine-network \
 --health-cmd "curl --fail http://localhost || exit 1" \
 --health-interval=5s \
@@ -25,3 +25,5 @@ setine/centos7-jenkins:1.0 \
 docker inspect --format="{{json .State.Health}}" centos7
 
 git config credential.helper store
+
+docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
