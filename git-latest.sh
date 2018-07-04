@@ -10,4 +10,3 @@ make prefix=/usr/local all
 make prefix=/usr/local install
 yum remove -y git
 git --version # should be GIT_VERSION
-
