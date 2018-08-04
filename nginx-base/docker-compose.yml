@@ -1,0 +1,14 @@
+version: '3'
+services:
+  nginx:
+    build: .
+    volumes:
+    - ../dist/nginx/html:/usr/share/nginx/html
+    - ../dist/nginx/conf:/etc/nginx
+    - ../dist/nginx/log:/var/log/nginx
+    ports:
+    - "80:80"
+    environment:
+    - NGINX_HOST=localhost
+    - NGINX_PORT=80
+    command: /bin/bash -c "exec nginx -g 'daemon off;'"
