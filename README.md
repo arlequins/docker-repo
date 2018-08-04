@@ -1,10 +1,6 @@
-# Docker images and start script
-## centos7-base
-## gitlab-base
+# Dockerfile and docker-compose
 ## nginx-base
-## script
-
-## reference
-### Docker Swarm
-- https://subicura.com/2017/02/25/container-orchestration-with-docker-swarm.html (Korean)
-
+## ubuntu 14.04
+## ubuntu 16.04
+## centos 6
+## centos 7
